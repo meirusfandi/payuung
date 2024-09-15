@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:payuung/data/financial_product_menu.dart';
@@ -35,7 +34,7 @@ class MenuItemWidget extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(8.0)),
                 color: Colors.red
               ),
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: const Text('New', style: TextStyle(fontSize: 10, color: Colors.white)),
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:payuung/pages/category_page.dart';
 import 'package:payuung/pages/home_page.dart';
 import 'package:payuung/pages/profile_page.dart';
 import 'package:payuung/utils/utils.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder> {
         const HomePage().routeName: (BuildContext context) => const HomePage(),
         const ProfilePage().routeName: (BuildContext context) => const ProfilePage(),
+        const CategoryPage().routeName: (BuildContext context) => const CategoryPage(),
       },
     );
   }

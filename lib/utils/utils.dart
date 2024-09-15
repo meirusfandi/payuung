@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:intl/intl.dart';
+
 class Utils {
   // color
   static Color primaryColor = const Color(0xFFF8C20A);
@@ -19,4 +21,13 @@ class Utils {
   static Color black73EColor = const Color(0xFF34373E);
   static Color black202Color = const Color(0xFF020202);
   static Color black338Color = const Color(0xFF303338);
+
+  static String convertToIdr(dynamic number, int decimalDigit) {
+    NumberFormat currencyFormatter = NumberFormat.currency(
+      locale: 'id',
+      symbol: 'Rp ',
+      decimalDigits: decimalDigit,
+    );
+    return currencyFormatter.format(number);
+  }
 }
